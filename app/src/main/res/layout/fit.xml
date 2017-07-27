@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#ffd900"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="体脂率测量:"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--        <EditText
+                    android:id="@+id/temperature_TxtC"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:onClick="temperatureBtn_Click"
+                    android:id="@+id/temperature_btn1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="转化"
+                    android:background="@drawable/yellow_selector"/>
+                <EditText
+                    android:id="@+id/temperature_TxtF"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />-->
+
+        <EditText
+            android:hint="你的体重：(kg)"
+            android:gravity="bottom"
+            android:id="@+id/fit_TxtC"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:hint="你的身高：(m)"
+            android:gravity="bottom"
+            android:id="@+id/fit_TxtF"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:hint="你的年龄：(year)"
+            android:gravity="bottom"
+            android:id="@+id/fit_TxtG"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+        <RadioGroup
+            android:id="@+id/fit_rg"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/fit_boy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"/>
+            <RadioButton
+                android:id="@+id/fit_girl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"/>
+
+
+        </RadioGroup>
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:background="@drawable/orange_selector"
+            android:id="@+id/fit_btn1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="计算"/>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:gravity="center"
+                android:id="@+id/fit_TxtH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"/>
+            <ImageView
+                android:id="@+id/fit_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="        注：该体脂率测量公式采用的是国际通用的BMI体脂测量公式，但是该公式只是概率公式，有一定的误差，最终结果仅供参考。你开心就好"/>
+        <TextView
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--------招君"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

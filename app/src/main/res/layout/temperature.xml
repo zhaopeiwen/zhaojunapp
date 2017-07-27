@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="摄氏度（℃）"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--===--"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="华氏度（℉）"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <EditText
+            android:id="@+id/temperature_TxtC"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="temperatureBtn_Click"
+            android:id="@+id/temperature_btn1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="转化"
+            android:background="@drawable/yellow_selector"/>
+        <EditText
+            android:id="@+id/temperature_TxtF"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />-->
+        <EditText
+            android:gravity="bottom|right"
+            android:id="@+id/temperature_TxtC"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+        <Button
+            android:background="@drawable/orange_selector"
+            android:id="@+id/temperature_btn1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="转化"/>
+
+        <EditText
+            android:id="@+id/temperature_TxtF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="        注：该转化可以互相转化，既可输入摄氏度，点击转化即可得到华氏度；同理，输入华氏度即可得到摄氏度。该转化器接受double类型转化，但是由于本人太懒，就不编写自动识别你输入的是什么了的代码了，请自行分辨你想要的结果。"/>
+        <TextView
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--------招君"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:background="#f7f7f7"
+        android:id="@+id/relative_et"
+        android:text="我"
+        android:gravity="right|bottom"
+        android:textSize="40dp"
+        android:editable="false"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <EditText
+        android:background="#f7f7f7"
+        android:id="@+id/relative_out"
+        android:text=""
+        android:textColor="#9c9c9c"
+        android:gravity="right|bottom"
+        android:textSize="23dp"
+        android:editable="false"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_husband"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/white_selector"
+            android:text="夫"
+            android:textSize="35dp"/>
+        <Button
+            android:id="@+id/btn_wife"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/white_selector"
+            android:text="妻"
+            android:textSize="35dp"/>
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/white_selector"
+            android:text="C"
+            android:textSize="35dp"/>
+        <Button
+            android:textColor="#ffb300"
+            android:id="@+id/btn_del"
+            android:layout_width="80dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="60dp"
+            android:background="@drawable/white_selector"
+            android:text="DEL"
+            android:textSize="35dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_father"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/white_selector"
+            android:text="父"
+            android:textSize="35dp"/>
+        <Button
+            android:id="@+id/btn_mother"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/white_selector"
+            android:text="母"
+            android:textSize="35dp"/>
+        <Button
+            android:id="@+id/btn_son"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/white_selector"
+            android:text="子"
+            android:textSize="35dp"/>
+        <Button
+            android:id="@+id/btn_daughter"
+            android:layout_width="80dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="60dp"
+            android:background="@drawable/white_selector"
+            android:text="女"
+            android:textSize="35dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_elderSister"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/white_selector"
+            android:text="姐"
+            android:textSize="35dp"/>
+        <Button
+            android:id="@+id/btn_sister"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/white_selector"
+            android:text="妹"
+            android:textSize="35dp"/>
+        <Button
+            android:id="@+id/btn_brother"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/white_selector"
+            android:text="兄"
+            android:textSize="35dp"/>
+        <Button
+            android:id="@+id/btn_youngerBrother"
+            android:layout_width="80dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="60dp"
+            android:background="@drawable/white_selector"
+            android:text="弟"
+            android:textSize="35dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_exchange"
+            android:layout_width="167dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/white_selector"
+            android:text="颠倒"
+            android:textSize="35dp"/>
+        <Button
+            android:id="@+id/btn_equal"
+            android:layout_width="167dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/orange_selector"
+            android:text="="
+            android:textSize="35dp"/>
+    </LinearLayout>
+
+</LinearLayout>
